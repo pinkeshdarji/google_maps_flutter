@@ -1,16 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pinkesh.google_maps_flutter">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
     <application
         android:label="google_maps_flutter"
         android:icon="@mipmap/ic_launcher">
 
         <!-- TODO: Add your API key here -->
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR KEY HERE"/>
+            android:value="YOUR-KEY"/>
 
         <activity
             android:name=".MainActivity"

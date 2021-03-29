@@ -37,15 +37,17 @@ class _SnapshotState extends State<Snapshot> {
             zoomControlsEnabled: false,
           ),
           Container(
-            decoration: BoxDecoration(color: Colors.blueGrey[50]),
+            decoration: BoxDecoration(
+                color: Colors.blueGrey[50], border: Border.all(width: 3)),
             height: 150,
             width: 120,
+            margin: EdgeInsets.all(8),
             child: _imageBytes != null ? Image.memory(_imageBytes) : null,
           ),
           Align(
-              alignment: AlignmentDirectional.bottomEnd,
+              alignment: AlignmentDirectional.bottomStart,
               child: Padding(
-                padding: const EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(40.0),
                 child: FloatingActionButton(
                   onPressed: () async {
                     final imageBytes = await _controller.takeSnapshot();
